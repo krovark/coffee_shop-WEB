@@ -1,6 +1,6 @@
 
 body {
-    background-color: #3B3A4F;
+    background-color: #183D3D;
     color: #FFFFFF;
 }
 
@@ -9,12 +9,20 @@ h2, h3 {
 }
 
 .card {
-    background-color: #2E2D3D;
+    background-color: #0C2635;
     border: none;
 }
 
 .card-title {
     color: #00FF00;
+}
+
+.card p{
+    color:whitesmoke;
+}
+
+.card-img-top{
+    max-height: 30px;
 }
 
 .btn-primary {
@@ -26,11 +34,11 @@ h2, h3 {
 }
 
 footer {
-    background-color: #2E2D3D;
+    background-color: #0C2635;
 }
 
 .code-box {
-    background-color: #2e2d3d;
+    background-color: #0C2635;
    
     font-family: 'Courier New', monospace;
 }
