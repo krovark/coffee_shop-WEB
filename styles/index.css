@@ -1,0 +1,75 @@
+
+body {
+    background-color: #3B3A4F;
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    color: #00FF00; /* Color de acento para los títulos */
+}
+
+.card {
+    background-color: #2E2D3D;
+    border: none;
+}
+
+.card-title {
+    color: #00FF00;
+}
+
+.btn-primary {
+    background-color: #00FF00;
+    border-color: #00FF00;
+    font-size: 1.25rem; 
+    padding: 0.75rem 1.5rem; 
+    color:black;
+}
+
+footer {
+    background-color: #2E2D3D;
+}
+
+.code-box {
+    background-color: #2e2d3d;
+   
+    font-family: 'Courier New', monospace;
+}
+
+.code-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.Coffee{
+    color:#00FF00;
+}
+
+.blue-word{
+    color: #0077b6;
+}
+
+.floating {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Definición de la animación */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateY(-3px); /* Se eleva 5px hacia arriba */
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .code-box {
+        height: auto; /* O usa una altura específica si es necesario, como 150px */
+        padding: 1rem; /* Ajusta el padding si es necesario */
+        overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
+        margin-bottom: 5px;
+    }
+}
+

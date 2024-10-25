@@ -1,43 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coddee Shop</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Aquí va tu archivo CSS -->
+    <meta name="description" content="Coddee-Shopp - Café de autor">
+    <title>Coddee-Shopp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <!-- Header con logo, menú y carrito -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Coddee Shop Logo"> <!-- Logo -->
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Comunidad</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="#">Contacto</a></li>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Logo.png" alt="Coddee-Shopp" height="70">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Historia</a>
+                    </li>
                 </ul>
-            </nav>
-            <div class="title">
-                <h1>Coddee Shop</h1>
-                <p>Take a <br/> break</p> <!-- Eslogan con el salto de línea -->
             </div>
-            <div class="cart">
-                <button>Carrito</button> <!-- Botón del carrito -->
-            </div>
+        </div>
+    </nav>
+
+    <!-- Banner estático -->
+    <header class="container-fluid p-0">
+        <div class="banner">
+            <img src="./assets/banner-cafe.png" class="img-fluid w-100" alt="Banner" style="height: 400px; object-fit: cover;">
         </div>
     </header>
-    <section class="about">
-        <div class="about-text">
-            <h2>Quiénes Somos</h2>
-            <p>En Coddee-shop, combinamos nuestra pasión por el café de especialidad y el código. Ofrecemos cafés únicos para acompañar a los creadores en cada proyecto, impulsando la creatividad con cada sorbo.</p>
-        </div>
-        <div class="about-image">
-            <img src="quienes-somos.jpg" alt="Imagen de Coddee Shop">
+
+    <!-- Call to Action -->
+    <section class="container my-5 text-center">
+        <h2>¡Disfruta tu café donde quieras!</h2>
+        <p>Compre ahora y recibe tu pedido en casa.</p>
+        <a href="#" class="btn btn-primary floating" >Compre Ahora</a>
+    </section>
+
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <!-- Texto a la izquierda -->
+            <div class="col-md-6">
+                <h1 class="text-start">#De cafe a Código</h1>
+                <p class="text-start text-success">//En Coddee-shop, combinamos nuestra pasión por el café de especialidad y el código. Ofrecemos cafés únicos para acompañar a los creadores en cada proyecto, impulsando la creatividad con cada sorbo.</p>
+                <div class="code-box p-4 rounded-3">
+                    <pre class="code-text">
+    <code><span class="Coffee">Coffee</span> coffee = <span class="blue-word">new</span> <span class="Coffee">Coffee</span>();
+    <span class="blue-word">if</span> (coffee.empty)
+    {
+    coffee.refill();
+    }
+    <span class="blue-word">else</span>
+    {
+           coffee.drink();
+        code();
+    }</code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Imagen a la derecha -->
+            <div class="col-md-6">
+                <img src="./assets/image4.png" class="img-fluid rounded" alt="Café y Código">
+            </div>
         </div>
     </section>
+
+    <!-- Pastillas de Información -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="icon1.png" class="card-img-top" alt="Icono 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Calidad</h5>
+                        <p class="card-text">Café de especialidad garantizada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="icon2.png" class="card-img-top" alt="Icono 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabor</h5>
+                        <p class="card-text">Sabores únicos en cada taza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="icon3.png" class="card-img-top" alt="Icono 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Comunidad</h5>
+                        <p class="card-text">Un espacio para los amantes del café y el código.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="icon4.png" class="card-img-top" alt="Icono 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Envíos</h5>
+                        <p class="card-text">Envíos rápidos a tu hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Productos -->
+    <section class="container my-5">
+        <h3>Nuestros Productos</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Café Espresso</h5>
+                        <p class="card-text">Nuestro clásico café espresso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cappuccino</h5>
+                        <p class="card-text">Café con leche espumosa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product3.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="card-text">Café con leche y un toque de arte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoniales -->
+<section class="container my-5 text-center">
+    <h3>Lo que dicen nuestros clientes</h3>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>"El mejor café para acompañar mis días de programación."</p>
+            </div>
+            <div class="carousel-item">
+                <p>"Un sabor único, me encanta Coddee-Shopp."</p>
+            </div>
+            <div class="carousel-item">
+                <p>"El café llega siempre a tiempo y en perfectas condiciones."</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Coddee-Shopp © 2024</p>
+        <p>Materia: Diseño Web - Comisión: Viernes Noche - Año: 2024</p>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
