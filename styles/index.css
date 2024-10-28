@@ -8,6 +8,12 @@ h2, h3 {
     color: #00FF00; /* Color de acento para los títulos */
 }
 
+.banner img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
 .card {
     background-color: #0C2635;
     border: none;
@@ -96,6 +102,10 @@ footer {
    .card{
     margin:3px;
    }
+
+   .banner img {
+    height: 100px; /* Ajusta la altura para pantallas pequeñas */
+}
 
 }
 

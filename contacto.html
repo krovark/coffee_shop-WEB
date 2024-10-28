@@ -3,42 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Contáctanos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/contacto.css">
+    <!-- Importación de Lottie sin type="module" -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
 </head>
 <body>
     <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href=" ">
-            <img src="./assets/Logo.png" alt="Coddee-Shopp" height="70">
-            
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./historia.html">Historia</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=" ">
+                <img src="./assets/Logo.png" alt="Coddee-Shopp" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Contacto -->
+    <section class="container text-center my-5">
+        <h1>Contáctanos</h1>
+        <p class="lead">Estamos aquí para ayudarte. Puedes contactarnos a través de los siguientes medios:</p>
+
+      <!-- Información de Contacto -->
+<div class="row my-4">
+    <!-- Dirección -->
+    <div class="col-md-4 col-12 mb-3">
+        <div class="card contact-item h-100 text-center shadow-sm p-4">
+            <img src="./assets/icons/location-pin.svg" alt="Ícono de Dirección" class="icon mx-auto my-3">
+            <h3 class="card-title">Dirección</h3>
+            <p>Coddee-Shop</p>
+            <p>Calle Ficticia 123</p>
+            <p>Ciudad de Ejemplo, País</p>
         </div>
     </div>
-</nav>   
+
+    <!-- Teléfono -->
+    <div class="col-md-4 col-12 mb-3">
+        <div class="card contact-item h-100 text-center shadow-sm p-4">
+            <img src="./assets/icons/telephone-operator.svg" alt="Ícono de Teléfono" class="icon mx-auto my-3">
+            <h3 class="card-title">Teléfono</h3>
+            <p>Línea Principal</p>
+            <p>+123 456 789</p>
+            <p>Atención 24/7</p>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="col-md-4 col-12 mb-3">
+        <div class="card contact-item h-100 text-center shadow-sm p-4">
+            <img src="./assets/icons/email.svg" alt="Ícono de Email" class="icon mx-auto my-3">
+            <h3 class="card-title">Email</h3>
+            <p>General: info@coddeeshop.com</p>
+            <p>Soporte: soporte@coddeeshop.com</p>
+            <p>Ventas: ventas@coddeeshop.com</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+     <!-- Formulario de Contacto -->
+     <section class="container my-5" id="form-section">
+        <h2>Envíanos un mensaje</h2>
+        <br>
+        <form id="contact-form">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Contenedor de la animación Lottie, oculto inicialmente -->
+    <div id="lottie-overlay">
+        <div id="lottie-animation">
+            <dotlottie-player id="success-lottie" src="https://lottie.host/1eb7b0d2-2f7b-4eb1-9d84-114b58d533fa/msIx05uXaD.json"
+                              background="transparent" speed="1" style="width: 300px; height: 300px;">
+            </dotlottie-player>
+            <p class="text-success">¡Mensaje enviado exitosamente!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Coddee-Shopp © 2024</p>
+        <p>- Materia: Diseño Web <br>- Comisión: Viernes Noche <br> - Año: 2024</p>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript para manejar el envío del formulario y mostrar la animación
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita la recarga de la página al enviar el formulario
+
+            // Mostrar la animación centrada
+            const lottieOverlay = document.getElementById("lottie-overlay");
+            lottieOverlay.style.display = 'flex';
+
+            // Iniciar la animación manualmente
+            const lottiePlayer = document.getElementById("success-lottie");
+            lottiePlayer.play();
+
+            // Vaciar los campos del formulario
+        document.getElementById("contact-form").reset();
+
+
+            setTimeout(() => {
+                lottieOverlay.style.display = 'none';
+                location.reload(); 
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
