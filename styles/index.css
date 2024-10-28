@@ -60,6 +60,19 @@ footer {
     animation: float 2s ease-in-out infinite;
 }
 
+
+#lottie-animation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;   
+}
+
 /* Definición de la animación */
 @keyframes float {
     0%, 100% {
@@ -78,6 +91,25 @@ footer {
         padding: 1rem; /* Ajusta el padding si es necesario */
         overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
         margin-bottom: 5px;
+    }
+
+   .card{
+    margin:3px;
+   }
+
+}
+
+.blinking {
+    animation: blink 1s steps(2, start) infinite;
+    
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
