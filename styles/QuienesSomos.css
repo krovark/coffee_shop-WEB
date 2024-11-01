@@ -24,7 +24,7 @@ h2, h3 {
 }
 
 #historia {
-    margin-top: 100px;
+    margin-top: 100px;}
 
 .cart-btn {
     background-color: #00FF00;
@@ -36,9 +36,9 @@ h2, h3 {
     width: 60px;
     transition: background-color 0.2s ease-in;
     position: relative;
-    overflow: hidden;
     z-index: 1;
     border-radius: 0.5em;
+
 }
 
 /* Hover effect */
@@ -173,14 +173,12 @@ footer {
 }
 
 
-
 @media (max-width: 576px) {
-    .code-box {
-        height: auto; /* O usa una altura específica si es necesario, como 150px */
-        padding: 1rem; /* Ajusta el padding si es necesario */
-        overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
-        margin-bottom: 5px;
+    .col-md-4, .col-md-8 {
+        flex: 0 0 100%; 
+        max-width: 100%;
     }
+
 
    .card{
     margin:3px;
@@ -189,7 +187,8 @@ footer {
    .banner img {
     height: 100px; /* Ajusta la altura para pantallas pequeñas */
 }
-
+ #stayHome{
+    color: #0077b6;
 }
 
 .blinking {
@@ -206,3 +205,10 @@ footer {
     }
 }
 
+.row {
+    margin-top: 20px; /* Espacio entre filas */
+}
+
+article {
+    margin-top: 20px; /* Espacio adicional si lo deseas */
+}
