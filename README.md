@@ -29,6 +29,7 @@ Investigación UX
 Se llevó a cabo un análisis de usuarios y la competencia, definiendo las características clave del sitio web a partir de entrevistas y encuestas. Los resultados fueron aplicados en el diseño de la interfaz, con el objetivo de optimizar la experiencia del cliente final.
 
 Wireframes
+Link Figma: https://www.figma.com/design/HhRk0327TwpXrN5bo5ojbc/Coffee_shop?node-id=0-1&t=CRtgaoiaTI7pRCt1-1
 Se crearon wireframes de baja y alta fidelidad para definir la estructura y disposición de los elementos en las distintas páginas del sitio.
 
 Componentes Personalizados
@@ -37,6 +38,7 @@ Se diseñaron todos los componentes visuales de Bootstrap con un estilo único:
 Paleta de colores personalizada: Colores principales y secundarios adaptados a la identidad visual de la tienda.
 Tipografía: Se utilizó una fuente de Google Fonts para darle un estilo moderno y diferenciado.
 Estilos CSS propios: Se sobrescribieron los estilos predeterminados de Bootstrap para lograr una apariencia visual única, adecuada a la temática del sitio.
+
 Validación y Optimización
 Validación HTML y CSS: Todo el código ha sido validado para garantizar compatibilidad y corrección semántica.
 Formulario de contacto validado: Se incluyó validación del formulario para garantizar la correcta entrada de datos por parte de los usuarios.
