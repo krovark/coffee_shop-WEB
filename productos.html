@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/productos.css">
 </head>
 <body>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="./assets/Logo.png" alt="Coddee-Shopp" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./historia.html">Historia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Sidebar with categories -->
+            <aside class="col-md-2 sidebar p-3">
+                <h4 class="text-center">Categorías</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#cafe" class="category-link">Café</a></li>
+                    <li><a href="#comidas" class="category-link">Comidas</a></li>
+                    <li><a href="#cafeteras" class="category-link">Cafeteras</a></li>
+                    <li><a href="#molinillos" class="category-link">Molinillos</a></li>
+                    <li><a href="#filtros" class="category-link">Filtros</a></li>
+                    <li><a href="#otros" class="category-link">Otros</a></li>
+                </ul>
+            </aside>
+
+            <!-- Product listings -->
+            <section class="col-md-7 content-section">
+                <div class="product-card d-flex align-items-center my-3 p-3">
+                    <img src="./assets/Moccha.PNG" alt="Product Image: Mocha" class="product-img rounded">
+                    <div class="product-info ms-3">
+                        <h5 class="product-title">MoC#a</h5>
+                        <p class="product-description">//Café con chocolate, la fusión más dulce para alimentar tu creatividad.</p>
+                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card d-flex align-items-center my-3 p-3">
+                    <img src="./assets/espressio.PNG" alt="Product Image: Espress.io" class="product-img rounded">
+                    <div class="product-info ms-3">
+                        <h5 class="product-title">Espress.io</h5>
+                        <p class="product-description">//La chispa perfecta para un día productivo. Intenso, rápido y al grano, como tu código (no?).</p>
+                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card d-flex align-items-center my-3 p-3">
+                    <img src="./assets/Roasted.PNG" alt="Product Image: Mocha" class="product-img rounded">
+                    <div class="product-info ms-3">
+                        <h5 class="product-title">R-oasted coffee</h5>
+                        <p class="product-description">//Aroma profundo, sabor robusto. El combustible esencial para programar sin pausas.</p>
+                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                    </div>
+                </div>
+            
+            </section>
+
+            <!-- Cart Summary -->
+            <aside class="col-md-3 cart-summary p-3">
+                <h4 class="cart-title">Shipping</h4>
+                <h6 class="cart-subtitle">Stay at 127.0.0.1</h6>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                    <p>//Ahorrá tiempo recibiendo el café desde la comodidad de tu casa.</p>
+                </div>
+                <button class="btn btn-secondary w-100 mt-3">Calcular el envío a mi hogar</button>
+            </aside>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
