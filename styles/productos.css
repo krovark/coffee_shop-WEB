@@ -137,6 +137,9 @@ body {
     background-color: #0c2635 !important;
     color: #b7c2c2 !important;
 }
+footer {
+    background-color: #0C2635;
+}
 /* Adjustments for Smaller Screens */
 @media (max-width: 576px) {
     .product-card {
