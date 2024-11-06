@@ -1,8 +1,8 @@
 $(document).ready(function() {
     const productos = [
-        { id: 1, nombre: "Camiseta", precio: 19.99 },
-        { id: 2, nombre: "Pantalón", precio: 49.99 },
-        { id: 3, nombre: "Zapatillas", precio: 79.99 }
+        { id: 1, nombre: "Cafe 1", precio: 19.99 },
+        { id: 2, nombre: "Cafe 2", precio: 49.99 },
+        { id: 3, nombre: "Cafe 3", precio: 79.99 }
     ];
 
     let carrito = [];
