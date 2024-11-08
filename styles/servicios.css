@@ -26,7 +26,83 @@ body {
     z-index: 1;
     border-radius: 0.5em;
 }
+.services {
+    text-align: center;
+    padding: 50px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
 
+p{
+    color: rgb(173, 173, 173);
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #183D3D;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+}
+
+.card-content {
+    padding-left: 20px; /* Ajusta el espacio a la izquierda del contenido */
+    text-align: left;
+  }
+
+
+.card img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.aside-content {
+    position: absolute;
+    top: 250px; /* Ajusta el valor según tu diseño */
+    right: 20px;
+    padding: 20px;
+    color: white; /* Color de texto opcional */
+    width: 30%;
+  }
+  
+  .aside-content a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+  
 /* Hover effect */
 .cart-btn:hover {
     background-color: #0C2635;
