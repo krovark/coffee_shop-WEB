@@ -85,6 +85,24 @@ p{
     text-decoration: none;
 }
 
+.modal-body li{
+    color: #000000;
+}
+
+.modal-body p{
+    color: #000000;
+}
+.modal-content {
+    background-color: #183D3D;
+    color: #ffffff;
+}
+.btn-close {
+    background-color: #00ff00;
+    border: none;
+}
+.btn-close:hover {
+    background-color: #00ff00;
+}
 .aside-content {
     position: absolute;
     top: 250px; /* Ajusta el valor según tu diseño */
