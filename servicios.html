@@ -47,35 +47,38 @@
     </div>
 </nav>
 
-<section class="services">
+<section class="services container">
     <h2>Servicios</h2>
-    <div class="card">
-        <img src="./assets/baristaAmateur.png" alt="Curso barista amateur">
-        <div class="card-content">
-            <h3>Curso Barista Amateur</h3>
-            <p>Aprende las bases del café desde la selección de granos y técnicas de extracción, hasta la preparación de espressos y arte latte, ideal para disfrutar el café en casa como un experto.</p>
-            <!-- Botón que abre el modal -->
-            <a href="#" class="btn-mas-info" data-bs-toggle="modal" data-bs-target="#modalAmateur">Más Información</a>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="./assets/baristaAmateur.png" alt="Curso barista amateur">
+                <div class="card-content">
+                    <h3>Curso Barista Amateur</h3>
+                    <p>Aprende las bases del café desde la selección de granos y técnicas de extracción, hasta la preparación de espressos y arte latte, ideal para disfrutar el café en casa como un experto.</p>
+                    <a href="#" class="btn-mas-info" data-bs-toggle="modal" data-bs-target="#modalAmateur">Más Información</a>
+                </div>
+            </div>
         </div>
-    </div>
-      
 
-      <div class="card">
-        <img src="./assets/baristaProfesional.png" alt="Curso barista profesional">
-        <div class="card-content">
-            <h3>Curso Barista Profesional</h3>
-            <p>Perfecciona tus habilidades como barista: técnicas avanzadas de extracción, latte art, calibración de equipos y análisis sensorial para dominar cada detalle de la experiencia del café.</p>
-            <!-- Botón que abre el modal -->
-            <a href="#" class="btn-mas-info" data-bs-toggle="modal" data-bs-target="#modalProfesional">Más Información</a>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="./assets/baristaProfesional.png" alt="Curso barista profesional">
+                <div class="card-content">
+                    <h3>Curso Barista Profesional</h3>
+                    <p>Perfecciona tus habilidades como barista: técnicas avanzadas de extracción, latte art, calibración de equipos y análisis sensorial para dominar cada detalle de la experiencia del café.</p>
+                    <a href="#" class="btn-mas-info" data-bs-toggle="modal" data-bs-target="#modalProfesional">Más Información</a>
+                </div>
+            </div>
         </div>
     </div>
-      <aside class="aside-content">
+
+    <div class="aside-content mt-4">
         <h3>¡Hazlo desde casa!</h3>
         <h3>Stay at 127.0.0.1</h3>
         <p>Lo más importante para un buen café, es un buen grano. Llévate el mejor grano para hacer café profesional en la comodidad de tu casa. Conocé nuestros granos.</p>
         <a href="#" class="btn-mas-info">Conoce nuestros granos</a>
-    </aside>  
-      
+    </div>
 </section>
 
 <div class="modal fade" id="modalAmateur" tabindex="-1" aria-labelledby="modalAmateurLabel" aria-hidden="true">
@@ -96,9 +99,6 @@
                     <li><strong>Precio:</strong> $12,000 ARS.</li>
                 </ul>
                 <p>Inscríbete para descubrir los secretos del café y poder preparar tu bebida favorita en casa con técnicas que mejoran el sabor y la experiencia.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -122,9 +122,6 @@
                     <li><strong>Precio:</strong> $35,000 ARS.</li>
                 </ul>
                 <p>Este curso es ideal para quienes desean convertir el café en una profesión y perfeccionar cada aspecto de la preparación. Al finalizar, tendrás el conocimiento necesario para crear una experiencia completa y profesional de café.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
