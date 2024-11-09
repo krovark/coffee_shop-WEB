@@ -98,8 +98,6 @@ body {
 .content-section {
     padding: 20px;
     background-color: #183d3d !important;
-    overflow-y: auto;
-    height: calc(100vh - 56px);
     color: #b7c2c2 !important;
     border-right: 1px solid #b7c2c2; /* Separator line between content and cart */
 }
@@ -119,8 +117,8 @@ body {
 .cart-summary {
     background-color: #183d3d !important; /* Match background of content section */
     color: #b7c2c2 !important;
-    height: 100%;
     border-left: 1px solid #b7c2c2; /* Thin white separator line between content and cart */
+    position: static; /* Asegura que no sea fijo */
 }
 .cart-title, .cart-subtitle {
     color: #b7c2c2 !important;
@@ -150,4 +148,5 @@ footer {
     .product-img {
         margin-bottom: 1rem;
     }
+    
 }
