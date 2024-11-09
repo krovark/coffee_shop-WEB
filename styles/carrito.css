@@ -77,3 +77,13 @@ h2, h3 {
     display: block;
 }   
 
+#finalizar-compra {
+    background-color: #00FF00 !important;
+    border-color: #00FF00 !important;
+    color: #183D3D !important; /* Color del texto para buen contraste */
+}
+
+#finalizar-compra:hover {
+    background-color: #0C2635 !important;
+    color: #b7c2c2 !important; /* Colores para el estado hover */
+}

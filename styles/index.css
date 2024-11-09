@@ -98,6 +98,11 @@ h2, h3 {
     object-fit: cover;
 }
 
+#comprar-btn:hover {
+    background-color: #0C2635;
+    color: #ffffff; /* Color claro para el texto en hover */
+}
+
 .card {
     background-color: #0C2635;
     border: none;

@@ -26,6 +26,23 @@ h2, h3 {
 #historia {
     margin-top: 100px;}
 
+    #historia p {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .text-center p {
+        max-width: 900px; /* Ajusta el ancho máximo según necesites */
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #historia h3 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     .cart-btn {
         background-color: #00FF00;
         border: none;
