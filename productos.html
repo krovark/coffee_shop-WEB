@@ -50,7 +50,7 @@
     <div class="container-fluid flex-grow-1"> <!-- Agregar flex-grow para que crezca -->
         <div class="row">
             <!-- Sidebar con categorías -->
-            <aside class="col-md-2 sidebar p-3">
+            <aside class="col-md-2 sidebar p-3 position-sticky" style="top: 0;">
                 <h4 class="text-center">Categorías</h4>
                 <ul class="list-unstyled">
                     <li><a href="#cafe" class="category-link">Café</a></li>
@@ -64,34 +64,113 @@
 
             <!-- Listado de productos -->
             <section class="col-md-7 content-section">
-                <div class="product-card d-flex align-items-center my-3 p-3">
-                    <img src="./assets/Moccha.PNG" alt="Product Image: Mocha" class="product-img rounded">
-                    <div class="product-info ms-3">
-                        <h5 class="product-title">MoC#a</h5>
-                        <p class="product-description">//Café con chocolate, la fusión más dulce para alimentar tu creatividad.</p>
-                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                <div id="cafe">
+                    <h4>Café</h4>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/Moccha.PNG" alt="Product Image: Mocha" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">MoC#a</h5>
+                            <p class="product-description">//Café con chocolate, la fusión más dulce para alimentar tu creatividad.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/espressio.PNG" alt="Product Image: Espress.io" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Espress.io</h5>
+                            <p class="product-description">//La chispa perfecta para un día productivo. Intenso, rápido y al grano, como tu código (no?).</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/Roasted.PNG" alt="Product Image: R-oasted coffee" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">R-oasted coffee</h5>
+                            <p class="product-description">//Aroma profundo, sabor robusto. El combustible esencial para programar sin pausas.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card d-flex align-items-center my-3 p-3">
-                    <img src="./assets/espressio.PNG" alt="Product Image: Espress.io" class="product-img rounded">
-                    <div class="product-info ms-3">
-                        <h5 class="product-title">Espress.io</h5>
-                        <p class="product-description">//La chispa perfecta para un día productivo. Intenso, rápido y al grano, como tu código (no?).</p>
-                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                <div id="comidas">
+                    <h4>Comidas</h4>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/stack.PNG" alt="Product Image: Stack overflow pancakes" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Stack Overflow</h5>
+                            <p class="product-description">//Esta pila de panqueques te dejará sin capacidad de almacenamiento. Perfecta para sobrecargar tus mañanas con sabor y energía.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/cake.PNG" alt="Product Image: Try torta de chocolate" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Try: Torta de chocolate</h5>
+                            <p class="product-description">//Preparate para ejecutar esta torta de chocolate sin miedo al éxito.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/gluten.PNG" alt="Product Image: Catch torta de chocolate sin gluten" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Catch: Torta de chocolate sin gluten</h5>
+                            <p class="product-description">//Así manejamos las excepciones: Podés disfrutar de esta versión totalmente libre de gluten.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card d-flex align-items-center my-3 p-3">
-                    <img src="./assets/Roasted.PNG" alt="Product Image: Mocha" class="product-img rounded">
-                    <div class="product-info ms-3">
-                        <h5 class="product-title">R-oasted coffee</h5>
-                        <p class="product-description">//Aroma profundo, sabor robusto. El combustible esencial para programar sin pausas.</p>
-                        <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                <div id="cafeteras">
+                    <h4>Cafeteras</h4>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/Aeropress.PNG" alt="Product Image: Aeropress" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Aeropress</h5>
+                            <p class="product-description">//Una cafetera que además de preparar un café delicioso y rápido, podés llevar a todos lados. Infaltable en el kit del programador viajero.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/Chemex.PNG" alt="Product Image: Chemex" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Chemex</h5>
+                            <p class="product-description">//Toda una experiencia científica para tomarte una pausa y despejar la mente mientras preparás un riquísimo café en tu casa. Cuando vuelvas al código, la respuesta te va a estar esperando. #Coddee-Shopp no se hace responsable de que así sea.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="molinillos">
+                    <h4>Molinillos</h4>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/molinillo.PNG" alt="Product Image: Molinillo Hario Slim" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Molinillo Hario Slim</h5>
+                            <p class="product-description">//Plugin infaltable para complementar cualquiera de nuestras cafeteras. Vas a sentir la diferencia. Sumale el ejercicio del día a la rutina del café.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="filtros">
+                    <h4>Filtros</h4>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/filtro-aero.PNG" alt="Product Image: Filtros para Aeropress" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Filtro Aeropress</h5>
+                            <p class="product-description">//Tu Aeropress se quedó sin memoria? Este pack tiene 350MB extra para que puedas seguir disfrutando del café más práctico.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="product-card d-flex align-items-center my-3 p-3">
+                        <img src="./assets/filtro-chem.PNG" alt="Product Image: Filtros para Chemex" class="product-img rounded">
+                        <div class="product-info ms-3">
+                            <h5 class="product-title">Filtro Chemex</h5>
+                            <p class="product-description">//No hace falta que te acerques al proveedor de insumos de laboratorio. Nosotros te llevamos estos filtros para que puedas seguir experimentando con tu Chemex.</p>
+                            <button class="btn btn-secondary cart-btn">Añadir al Carrito</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Resumen del carrito -->
-            <aside class="col-md-3 cart-summary p-3">
+            <aside class="col-md-3 cart-summary p-3 position-sticky" style="top: 0;">
                 <h4 class="cart-title">Shipping</h4>
                 <h6 class="cart-subtitle">Stay at 127.0.0.1</h6>
                 <div class="cart-items">
