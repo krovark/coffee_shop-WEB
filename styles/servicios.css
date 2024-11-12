@@ -71,7 +71,7 @@ body {
 
 .card-content h3, .card-content p {
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
 }
 
 .card a {
@@ -103,7 +103,7 @@ body {
     padding: 20px;
     color: #FFFFFF;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .btn-mas-info {
@@ -129,5 +129,13 @@ footer p {
 @media (min-width: 768px) {
     .aside-content {
         width: 30%;
+    }
+
+   
+}
+@media (max-width: 768px) {
+    
+    .card img {
+        width: 40%; 
     }
 }

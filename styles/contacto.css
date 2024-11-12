@@ -81,7 +81,7 @@ body {
 .contact-item {
     transition: transform 0.3s, background-color 0.3s;
     border: none;
-    background-color: #2e2d3d;
+    background-color: #0C2635;
     color: #FFFFFF;
     /* height: 150px; */
 }
