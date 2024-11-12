@@ -4,8 +4,8 @@ body {
     font-family: 'JetBrains Mono', monospace !important;
 }
 
-.navbar-nav .nav-item {
-    margin-right: 20px;
+.navbar-nav .nav-item a {
+    color: #FFFFFF;
 }
 
 .cart-btn {
@@ -18,86 +18,110 @@ body {
     width: 60px;
     transition: background-color 0.2s ease-in;
     border-radius: 0.5em;
+    color: #183D3D;
+}
+
+.cart-btn:hover {
+    background-color: #0c2635;
+    color: #b7c2c2;
+}
+
+#servicios{
+    color:#00FF00;
 }
 
 .services {
     text-align: center;
     padding: 50px 15px;
-    color: #000;
+    color: #FFFFFF;
 }
-.services p{
-    color: #000;
-}
-.services h3{
-    color: #000;
+
+.services p, .services h3 {
+    color: #FFFFFF;
 }
 
 .card {
-    background-color: #183D3D;
+    background-color: #0c2635 !important;
     padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.card-content h3, .card-content p {
+    color: #FFFFFF;
+}
+
+.card .img-container {
+    background-color: #0c2635;
+    /* padding: 10px; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .card img {
-    max-width: 150px;
+    max-width: 120px;
     margin-bottom: 10px;
-    
 }
 
 .card a {
     display: inline-block;
-    background-color: #4CAF50;
-    color: #000000;
+    background-color: #00FF00;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card a:hover {
+    background-color: #0c2635;
+    color: #b7c2c2;
 }
 
 .modal-content {
     background-color: #183D3D;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .btn-close {
     background-color: #00ff00;
     border: none;
 }
-.aside {
-    margin-left: 25%; /* Ajusta este valor para centrarlo según el ancho de la página */
-    width: 50%; /* Asegúrate de que el ancho no ocupe todo el espacio */
-    text-align: center; /* Centra el texto dentro del aside */
-}
 
 .aside-content {
     padding: 20px;
-    color: rgb(0, 0, 0);
+    color: #FFFFFF;
     margin: 0 auto;
-    
+    text-align: center;
 }
-
 
 .btn-mas-info {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #32CD32; /* Cambia el color según tu diseño */
-    color: #000000;
+    background-color: #00FF00;
+    color: black;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-@media (min-width: 768px) {
-    .aside-content {
-
-        width: 30%;
-        
-        
-    }
+.btn-mas-info:hover {
+    background-color: #0c2635;
+    color: #b7c2c2;
 }
 
 footer p {
+    color: #FFFFFF;
     margin: 0;
 }
 
-.social-icons img {
-    filter: invert(1);
+@media (min-width: 768px) {
+    .aside-content {
+        width: 30%;
+    }
 }
