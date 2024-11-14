@@ -70,9 +70,9 @@ $(document).ready(function() {
     $('#finalizar-compra').on('click', function() {
         // Reinicia la animación y abre el modal
         const animation = document.getElementById('animation');
-        animation.stop();  // Detiene cualquier animación en progreso
-        animation.play();  // Reproduce la animación desde el principio
-        $('#animationModal').modal('show');  // Muestra el modal con la animación
+        animation.stop();  
+        animation.play();  
+        $('#animationModal').modal('show');  
 
         carrito = [];  // Limpia el carrito
         renderizarCarrito();
@@ -81,8 +81,8 @@ $(document).ready(function() {
         // Cierra el modal cuando la animación termina y refresca la página
         animation.addEventListener('complete', () => {
             $('#animationModal').modal('hide');
-            location.reload();  // Recarga la página
-        }, { once: true });  // Se ejecuta solo una vez por cada clic
+            location.reload();  
+        }, { once: true });  
     });
 
     renderizarCarrito();

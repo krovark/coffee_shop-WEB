@@ -64,7 +64,7 @@ body {
 }
 
 .card img {
-    width: 20%; /* Ocupa todo el ancho del contenedor */
+    width: 20%; 
     border-radius: 8px;
     border: 3px solid #ffffff49; 
 }

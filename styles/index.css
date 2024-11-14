@@ -6,7 +6,7 @@ body {
 }
 
 h2, h3 {
-    color: #00FF00; /* Color de acento para los títulos */
+    color: #00FF00; 
 }
 
 .navbar-nav {
@@ -17,15 +17,7 @@ h2, h3 {
     margin-right: 20px;
 }
 
-/* .cart-btn {
-    background-color: #00FF00;
-    border: none;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-} */
+
 
 .cart-btn {
     background-color: #00FF00;
@@ -104,7 +96,7 @@ h2, h3 {
 
 #comprar-btn:hover {
     background-color: #0C2635;
-    color: #ffffff; /* Color claro para el texto en hover */
+    color: #ffffff; 
 }
 
 .card {
@@ -185,10 +177,10 @@ footer a {
 /* Definición de la animación */
 @keyframes float {
     0%, 100% {
-        transform: translateY(0); /* Posición inicial y final */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-3px); /* Se eleva 5px hacia arriba */
+        transform: translateY(-3px); 
     }
 }
 
@@ -196,9 +188,9 @@ footer a {
 
 @media (max-width: 576px) {
     .code-box {
-        height: auto; /* O usa una altura específica si es necesario, como 150px */
-        padding: 1rem; /* Ajusta el padding si es necesario */
-        overflow-y: auto; /* Agrega scroll si el contenido es demasiado largo */
+        height: auto; 
+        padding: 1rem; 
+        overflow-y: auto; 
         margin-bottom: 5px;
     }
 
@@ -207,7 +199,7 @@ footer a {
    }
 
    .banner img {
-    height: 100px; /* Ajusta la altura para pantallas pequeñas */
+    height: 100px; 
 }
 
 }
