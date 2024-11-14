@@ -110,10 +110,12 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #00FF00;
+    border: 1px solid #00FF00;
     color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    
 }
 
 .btn-mas-info:hover {
@@ -123,8 +125,14 @@ body {
 
 footer p {
     color: #FFFFFF;
-    margin: 0;
+    margin-left: 10px;
+    text-align: left;
 }
+
+footer a {
+    padding: 12px;
+}
+
 
 @media (min-width: 768px) {
     .aside-content {
@@ -137,5 +145,8 @@ footer p {
     
     .card img {
         width: 40%; 
+    }
+    footer {
+        margin: 1px;
     }
 }

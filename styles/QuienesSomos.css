@@ -139,9 +139,7 @@ h2, h3 {
     color:black;
 }
 
-footer {
-    background-color: #0C2635;
-}
+
 
 .code-box {
     background-color: #0C2635;
@@ -166,26 +164,31 @@ footer {
     animation: float 2s ease-in-out infinite;
 }
 
+footer {
+    background-color: #0C2635;
+    color: #FFFFFF;
+    
+ 
+}
 
-/* #lottie-animation {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;   
-} */
+footer p {
+    color: #FFFFFF;
+    margin-left: 10px;
+    text-align: left;
+}
 
-/* Definición de la animación */
+footer a {
+    padding: 12px;
+}
+
+
+
 @keyframes float {
     0%, 100% {
-        transform: translateY(0); /* Posición inicial y final */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-3px); /* Se eleva 5px hacia arriba */
+        transform: translateY(-3px); 
     }
 }
 
@@ -202,7 +205,7 @@ footer {
    }
 
    .banner img {
-    height: 100px; /* Ajusta la altura para pantallas pequeñas */
+    height: 100px; 
 }
  #stayHome{
     color: #0077b6;
@@ -223,10 +226,16 @@ footer {
 }
 
 .row {
-    margin-top: 20px; /* Espacio entre filas */
+    margin-top: 20px; 
 }
 
 article {
-    margin-top: 20px; /* Espacio adicional si lo deseas */
+    margin-top: 20px; 
 }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin: 1px;
+    }
 }

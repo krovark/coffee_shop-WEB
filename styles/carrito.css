@@ -5,7 +5,7 @@ body {
 }
 
 h2, h3 {
-    color: #00FF00; /* Color de acento para los títulos */
+    color: #00FF00; 
 }
 
 .navbar-nav {
@@ -27,7 +27,7 @@ h2, h3 {
 }
 
 .cart-sidebar {
-    z-index: 1050; /* Aumento el index Z para que este sobre otros elementos */
+    z-index: 1050; 
     overflow-y: auto;
 }
 
@@ -38,7 +38,7 @@ h2, h3 {
 
 .cart-header {
     padding: 1rem;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #0C2635;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +50,13 @@ h2, h3 {
 
 .cart-footer {
     padding: 1rem;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #0C2635;
 }
 
 .cart-item {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid #0C2635;
 }
 
 .cart-item:last-child {
@@ -81,21 +81,38 @@ h2, h3 {
 #finalizar-compra {
     background-color: #00FF00 !important;
     border-color: #00FF00 !important;
-    color: #183D3D !important; /* Color del texto para buen contraste */
+    color: #183D3D !important; 
 }
 
 #finalizar-compra:hover {
     background-color: #0C2635 !important;
-    color: #b7c2c2 !important; /* Colores para el estado hover */
+    color: #b7c2c2 !important;
 }
 
-/* Establecer altura fija para las tarjetas */
+
 .card {
-    min-height: 350px; /* Altura mínima para dar más espacio al contenido */
-    max-width: 100%; /* Opción para controlar el ancho en pantallas grandes */
+    min-height: 350px; 
+    max-width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #0C2635;
+    color: #FFFFFF;
+}
+
+#product-list {
+    height: 60%;
+}
+
+.add-to-cart {
+    background-color: #00FF00;
+    border-color: #00FF00 !important;
+    color: #183D3D;
+}
+
+.add-to-cart:hover {
+    background-color: #0C2635 !important;
+    color: #b7c2c2 !important;
 }
 
 
@@ -110,4 +127,22 @@ h2, h3 {
 .card-body {
     
     padding: 15px;
+}
+
+footer p {
+    color: #FFFFFF;
+    margin-left: 10px;
+    text-align: left;
+}
+
+footer a {
+    padding: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+    footer {
+        margin: 1px;
+    }
 }

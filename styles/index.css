@@ -98,6 +98,10 @@ h2, h3 {
     object-fit: cover;
 }
 
+#comprar-btn {
+    border: 1px solid #00FF00;
+}
+
 #comprar-btn:hover {
     background-color: #0C2635;
     color: #ffffff; /* Color claro para el texto en hover */
@@ -131,6 +135,16 @@ h2, h3 {
 footer {
     background-color: #0C2635;
 }
+footer p {
+    color: #FFFFFF;
+    margin-left: 10px;
+    text-align: left;
+}
+
+footer a {
+    padding: 12px;
+}
+
 
 .code-box {
     background-color: #0C2635;
@@ -212,3 +226,8 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    footer {
+        margin: 1px;
+    }
+}

@@ -1,3 +1,7 @@
+*{
+    text-align: left;
+}
+
 body {
     background-color: #183D3D;
     color: #FFFFFF;
@@ -122,11 +126,11 @@ h1, h2 {
 .btn-primary {
     background-color: #00FF00;
     border-color: #00FF00;
-    color: black;
+    color: #0C2635;
 }
 
 .btn-primary:hover {
-    background-color: #00CC00;
+    background-color: #0C2635;
     border-color: #00CC00;
     
 }
@@ -157,8 +161,19 @@ h1, h2 {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
+
+footer p {
+    color: #FFFFFF;
+    margin-left: 10px;
+    text-align: left;
+}
+
+footer a {
+    padding: 12px;
+}
+
 
 @media (max-width: 576px) {
     .contact-item {
@@ -167,5 +182,11 @@ h1, h2 {
         margin: 4px; /* Agrega margen de 4px alrededor de cada card */
         padding: 10px; /* Ajusta el padding si deseas reducirlo */
         
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin: 1px;
     }
 }
