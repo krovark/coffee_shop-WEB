@@ -121,7 +121,7 @@ h2, h3 {
     border-color: #00FF00;
     font-size: 1.25rem; 
     padding: 0.75rem 1.5rem; 
-    color:black;
+    color:#183d3d;
 }
 
 footer {
@@ -129,8 +129,9 @@ footer {
 }
 footer p {
     color: #FFFFFF;
-    margin-left: 10px;
+    margin: 0 5%;
     text-align: left;
+    font-size: 0.7em;
 }
 
 footer a {

@@ -166,8 +166,9 @@ h1, h2 {
 
 footer p {
     color: #FFFFFF;
-    margin-left: 10px;
+    margin: 0 5%;
     text-align: left;
+    font-size: 0.7em;
 }
 
 footer a {

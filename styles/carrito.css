@@ -109,6 +109,8 @@ h2, h3 {
     border-color: #00FF00 !important;
     color: #183D3D;
     align-items: center;
+    margin: 0 auto;
+    display: block;
 }
 
 .add-to-cart:hover {
@@ -132,8 +134,9 @@ h2, h3 {
 
 footer p {
     color: #FFFFFF;
-    margin-left: 10px;
+    margin: 0 5%;
     text-align: left;
+    font-size: 0.7em;
 }
 
 footer a {
@@ -146,4 +149,7 @@ footer a {
     footer {
         margin: 1px;
     }
+
+    
 }
+
