@@ -108,6 +108,7 @@ h2, h3 {
     background-color: #00FF00;
     border-color: #00FF00 !important;
     color: #183D3D;
+    align-items: center;
 }
 
 .add-to-cart:hover {
@@ -119,7 +120,7 @@ h2, h3 {
 
 .card img {
     width: 100%; 
-    max-height: 380px; 
+    height: 325px; 
     object-fit: cover; 
     border-radius: 8px 8px 0 0; 
 }
